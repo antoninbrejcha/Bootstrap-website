@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body {
+  background-image: url("../images/fe769c1fb4b67a2c14da35db3bb3197c.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 /*!
  * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
