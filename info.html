@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Bootstrap SCSS</title>
+  </head>
+  <body>
+    <main class="custom-bg">
+      <nav class="navbar navbar-expand-md bg-transparent">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand fs-2 fw-semibold pt-0 ms-3 text-uppercase text-cream-800"
+            href="index.html"
+            >Home</a
+          >
+          <button
+            class="navbar-toggler bg-cream-800"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-cream-800"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="info.html">Info</a></li>
+                  <li><a class="dropdown-item" href="#">Menu</a></li>
+                  <li><a class="dropdown-item" href="#">Team</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="text-center">
+        <h1 class="display-6 fw-semibold cibo-gustoso text-cream-800">
+          Cibo gustoso
+        </h1>
+      </div>
+      <section class="text-center container-fluid text-cream-800 row ms-auto me-auto mt-5">
+        <div class="col-12 col-sm-6"><h3 class="display-3 fw-medium">Who are we?</h3></div>
+        <div class="col-12 col-sm-4 text-sm-start">
+          <p class="fs-6">
+            Vulputate in elit tincidunt elit scelerisque massa fusce pharetra.
+            Sagittis gravida lacus quisque dictum non pretium suspendisse
+            porttitor. Risus adipiscing semper ornare velit. Sagittis consequat
+            luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

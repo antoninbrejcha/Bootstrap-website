@@ -1,12 +1,36 @@
-body{
-    background-image: url("../images/fe769c1fb4b67a2c14da35db3bb3197c.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-.cibo-gustoso{
-    margin-top: -10px;
-    letter-spacing: 0.3rem;
+//custom colors
+$cream-100: #e7e9e2 !default;
+$cream-200: #cfd2c6 !default;
+$cream-300: #b7bca9 !default;
+$cream-400: #9fa68c !default;
+$cream-500: #878f70 !default;
+$cream-600: #6c7359 !default;
+$cream-700: #515643 !default;
+$cream-800: #36392d !default;
+$cream-900: #1b1d16 !default;
+
+$custom-colors: (
+  "cream-100": $cream-100,
+  "cream-200": $cream-200,
+  "cream-300": $cream-300,
+  "cream-400": $cream-400,
+  "cream-500": $cream-500,
+  "cream-600": $cream-600,
+  "cream-700": $cream-700,
+  "cream-800": $cream-800,
+  "cream-900": $cream-900,
+) !default;
+
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.cibo-gustoso {
+  margin-top: -10px;
+  letter-spacing: 0.3rem;
 }
 
+.custom-bg {
+  background-color: $cream-200 !important;
+}
 @import "../bootstrap/scss/bootstrap.scss";
