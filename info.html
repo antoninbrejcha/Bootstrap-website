@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap"
+      rel="stylesheet"
+    />
     <title>Bootstrap SCSS</title>
   </head>
   <body>
-    <main class="custom-bg">
+    <main class="info-bg">
       <nav class="navbar navbar-expand-md bg-transparent">
         <div class="container-fluid">
           <a
@@ -41,7 +47,8 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="info.html">Info</a></li>
                   <li><a class="dropdown-item" href="#">Menu</a></li>
-                  <li><a class="dropdown-item" href="#">Team</a></li>
+                  <li><a class="dropdown-item" href="team.html">Team</a></li>
+                  <li><a class="dropdown-item" href="team.html#join-form">Want to join?</a></li>
                 </ul>
               </li>
             </ul>
@@ -53,9 +60,13 @@
           Cibo gustoso
         </h1>
       </div>
-      <section class="text-center container-fluid text-cream-800 row ms-auto me-auto mt-5">
-        <div class="col-12 col-sm-6"><h3 class="display-3 fw-medium">Who are we?</h3></div>
-        <div class="col-12 col-sm-4 text-sm-start">
+      <section
+        class="text-center container-fluid text-cream-800 row ms-auto me-auto mt-5"
+      >
+        <div class="col-12 col-sm-6">
+          <h3 class="display-3 fw-semibold">Who are we?</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 text-sm-start">
           <p class="fs-6">
             Vulputate in elit tincidunt elit scelerisque massa fusce pharetra.
             Sagittis gravida lacus quisque dictum non pretium suspendisse
@@ -64,7 +75,123 @@
           </p>
         </div>
       </section>
+      <section>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/2c02e4a9b0e9b8a0d27825b29a4f17a3.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/434f337e91a66a2639ca53bdc074e4b7.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Neapolitan pizza</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go To Menu</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/15bdff2d67d3434e8c3f08dfd7c3bb5d.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Our staff</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="team.html" class="btn btn-primary">Team Info</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/0d6fea4b5838839624320cd8d440e912.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/dd9f1091d0994e76288d526a23430f1f.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carousel.js"></script>
   </body>
 </html>

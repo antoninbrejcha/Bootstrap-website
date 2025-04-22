@@ -4,10 +4,129 @@
   letter-spacing: 0.3rem;
 }
 
-.custom-bg {
+.info-bg {
   background-color: #cfd2c6 !important;
 }
 
+.team-bg {
+  background-color: #b7bca9 !important;
+}
+
+.card-image {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.img-wrapper {
+  max-width: 100%;
+  height: 50vw;
+  min-height: 14rem;
+  max-height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-inner {
+  padding: 1rem !important;
+}
+
+.card {
+  margin: auto;
+  width: 65vw !important;
+}
+
+.carousel-control-prev {
+  justify-content: flex-start !important;
+}
+
+.carousel-control-next {
+  justify-content: flex-end !important;
+}
+
+h3, .h3 {
+  font-family: "Chonburi", serif !important;
+}
+
+.our-team {
+  color: #36392d !important;
+}
+
+.team-text {
+  color: #36392d !important;
+}
+
+.team-grid div img {
+  width: 100%;
+  aspect-ratio: 2/3 !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 0.25rem !important;
+}
+.team-grid div h5, .team-grid div .h5 {
+  padding-top: 0.5rem !important;
+  margin: 0 !important;
+  color: #36392d !important;
+}
+.team-grid div p {
+  margin: 0 !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  color: #515643 !important;
+}
+.team-grid div p:nth-of-type(2) {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.join-text {
+  color: #36392d !important;
+  font-family: "Chonburi", serif !important;
+  padding-top: 2rem !important;
+}
+
+@media (min-width: 576px) {
+  .carousel-inner {
+    display: flex !important;
+  }
+  .carousel-item {
+    display: block !important;
+    margin-right: 0 !important;
+    flex: 0 0 50% !important;
+  }
+  .img-wrapper {
+    height: 23vw;
+  }
+  .card {
+    width: 35vw !important;
+  }
+}
+.made-by-italians {
+  margin-top: 10rem !important;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    flex: 0 0 33.3333333333% !important;
+  }
+  .card {
+    width: 28vw !important;
+    max-width: 375px !important;
+  }
+}
+@media (min-width: 992px) {
+  .team-grid div p:nth-of-type(2) {
+    padding-bottom: 1rem !important;
+  }
+}
 /*!
  * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -13227,4 +13346,25 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.btn {
+  background-color: #878f70 !important;
+  border-color: #cfd2c6 !important;
+  transition: all 0.3s ease-out !important;
+  transform-origin: center !important;
+}
+
+.carousel-item.active .card .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:hover {
+  background-color: #36392d !important;
+  color: #cfd2c6 !important;
+  transform: scale(1.05) !important;
+}
+
+.sent-btn {
+  background-color: #515643 !important;
 }/*# sourceMappingURL=style.css.map */

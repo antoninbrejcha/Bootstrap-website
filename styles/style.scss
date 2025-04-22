@@ -23,6 +23,7 @@ $custom-colors: (
 
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .cibo-gustoso {
@@ -30,7 +31,135 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   letter-spacing: 0.3rem;
 }
 
-.custom-bg {
+.info-bg {
   background-color: $cream-200 !important;
 }
+.team-bg {
+  background-color: $cream-300 !important;
+}
+.card-image {
+  object-fit: cover !important;
+}
+
+.img-wrapper {
+  max-width: 100%;
+  height: 50vw;
+  min-height: 14rem;
+  max-height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.img-wrapper {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.carousel-inner {
+  padding: 1rem !important;
+}
+.card {
+  margin: auto;
+  width: 65vw !important;
+}
+.carousel-control-prev {
+  justify-content: flex-start !important;
+}
+.carousel-control-next {
+  justify-content: flex-end !important;
+}
+h3 {
+  font-family: "Chonburi", serif !important;
+}
+.our-team {
+  color: $cream-800 !important;
+}
+.team-text {
+  color: $cream-800 !important;
+}
+.team-grid div {
+  img {
+    width: 100%;
+    aspect-ratio: 2/3 !important;
+    object-fit: cover;
+    padding-top: 0.25rem !important;
+  }
+  h5 {
+    padding-top: 0.5rem !important;
+    margin: 0 !important;
+    color: $cream-800 !important;
+  }
+  p {
+    margin: 0 !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    color: $cream-700 !important;
+  }
+  p:nth-of-type(2) {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+.join-text{
+  color: $cream-800 !important;
+  font-family: "Chonburi", serif !important;
+  padding-top: 2rem !important;
+}
+@include media-breakpoint-up(sm) {
+  .carousel-inner {
+    display: flex !important;
+  }
+  .carousel-item {
+    display: block !important;
+    margin-right: 0 !important;
+    flex: 0 0 calc(100% / 2) !important;
+  }
+  .img-wrapper {
+    height: 23vw;
+  }
+  .card {
+    width: 35vw !important;
+  }
+}
+.made-by-italians {
+  margin-top: 10rem !important;
+}
+@include media-breakpoint-up(md) {
+  .carousel-item {
+    flex: 0 0 calc(100% / 3) !important;
+  }
+  .card {
+    width: 28vw !important;
+    max-width: 375px !important;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .team-grid div {
+    p:nth-of-type(2) {
+      padding-bottom: 1rem !important;
+    }
+  }
+}
 @import "../bootstrap/scss/bootstrap.scss";
+
+.btn {
+  background-color: $cream-500 !important;
+  border-color: $cream-200 !important;
+  transition: all 0.3s ease-out !important;
+  transform-origin: center !important;
+}
+.carousel-item.active .card .btn {
+  position: relative;
+  z-index: 2;
+}
+.btn:hover {
+  background-color: $cream-800 !important;
+  color: $cream-200 !important;
+  transform: scale(1.05) !important;
+}
+.sent-btn{
+  background-color: $cream-700 !important;
+}
